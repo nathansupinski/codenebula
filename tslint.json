@@ -1,0 +1,159 @@
+{
+
+  "extends": ["codelyzer"],
+
+  "rules": {
+
+    "class-name": true,
+
+    "import-spacing": true,
+
+    "space-before-function-paren": [true, "never"],
+
+    "space-within-parens": [true, 0],
+
+    "switch-final-break": false,
+
+    "whitespace": [
+
+      true,
+
+      "check-module",
+
+      "check-decl",
+
+      "check-separator",
+
+      "check-type",
+
+      "check-typecast",
+
+      "check-type-operator",
+
+      "check-preblock"
+
+    ],
+
+    // "no-any": true,
+
+    "no-console": [
+
+      true,
+
+      "log"
+
+      // "error"
+
+    ],
+
+    "curly": [true, "ignore-same-line"],
+
+    "eofline": true,
+
+    "indent": [true, "spaces", 2],
+
+    "max-line-length": [true, 140],
+
+    "member-ordering": [
+
+      true,
+
+      {
+
+        "order": "statics-first"
+
+      }
+
+    ],
+
+    "no-arg": true,
+
+    "no-construct": true,
+
+    "no-duplicate-variable": true,
+
+    "no-empty": true,
+
+    "no-eval": true,
+
+    "no-trailing-comma": false,
+
+    "no-trailing-whitespace": true,
+
+    "no-unused-expression": true,
+
+    "radix": false,
+
+    "arrow-return-shorthand": true,
+
+    "no-use-before-declare": true,
+
+    "one-line": [
+
+      true,
+
+      "check-open-brace",
+
+      "check-catch",
+
+      "check-else",
+
+      "check-whitespace"
+
+    ],
+
+    "quotemark": [true, "single"],
+
+    "semicolon": true,
+
+    "prefer-template": false,
+
+    "triple-equals": true,
+
+    "variable-name": [
+
+      true,
+
+      "ban-keywords",
+
+      "check-format",
+
+      "allow-leading-underscore",
+
+      "require-const-for-all-caps"
+
+    ],
+
+    "no-input-rename": true,
+
+    // "unnecessary-else": true,
+
+    "no-output-rename": true,
+
+    "no-forward-ref": false,
+
+    "use-lifecycle-interface": true,
+
+    "use-pipe-transform-interface": true,
+
+    "component-class-suffix": true,
+
+    "directive-class-suffix": true,
+
+    "import-destructuring-spacing": true
+
+  },
+
+  "linterOptions": {
+
+    "exclude": ["e2e/**/*.spec.ts", "e2e", "e2e/**/*"]
+
+  },
+
+  "cliOptions": {
+
+    "exclude": ["e2e/**/*.spec.ts", "e2e", "e2e/**/*", "**/e2e/**/*.spec.ts"]
+
+  }
+
+}

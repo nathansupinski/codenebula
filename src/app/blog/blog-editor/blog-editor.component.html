@@ -1,0 +1,24 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')"
+               (closed)="events.push('close!')" [fixedInViewport]="true" [fixedTopGap]="64">
+    Blogs
+    <mat-nav-list>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="sidenav-main-content">
+    <!--<div>main content</div>
+    <p><mat-checkbox [(ngModel)]="opened">sidenav.opened</mat-checkbox></p>
+    <p><button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button></p> -->
+
+    <div>Editor data: {{markdownEditorData}}</div>
+    <br>
+    <div>Generated HTML: {{htmlContent}}</div>
+    <div id="markdown-editor-preview" [innerHTML]="htmlContent">
+
+    </div>
+    <textarea id="markdown-editor" [(ngModel)]="markdownEditorData" (change)="editorChanged()">
+
+    </textarea>
+  </mat-sidenav-content>
+</mat-sidenav-container>
