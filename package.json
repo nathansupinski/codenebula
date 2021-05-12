@@ -28,7 +28,7 @@
     "@ngrx/store-devtools": "^8.6.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2",
-    "codemirror": "^5.51.0",
+    "codemirror": "^5.58.2",
     "@types/codemirror": "^0.0.84",
     "@types/marked": "^0.7.2",
     "easymde": "^2.9.0",
